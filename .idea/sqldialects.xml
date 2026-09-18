@@ -2,5 +2,7 @@
 <project version="4">
   <component name="SqlDialectMappings">
     <file url="file://$PROJECT_DIR$/Api-management-service/src/main/resources/db/migration/V1__create_api_management_schema.sql" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/Api-management-service/src/main/resources/db/migration/V2__seed_management_roles.sql" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/Api-management-service/src/main/resources/db/migration/V3__seed_platform_accounts.sql" dialect="GenericSQL" />
   </component>
 </project>
