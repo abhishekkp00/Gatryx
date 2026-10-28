@@ -8,23 +8,27 @@ import lombok.Setter;
 import java.time.LocalDateTime;
 
 @Entity
-@Table(name = "organizations")
+@Table(name = "management_users")
 @Getter
 @Setter
 @NoArgsConstructor
-public class Organization {
+public class ManagementUser {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    private String name;
-    private String slug;
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "organization_id")
+    private Organization organization;
 
-    @Enumerated(EnumType.STRING)
-    private OrganizationStatus status;
+    @ManyToOne(fetch = FetchType.EAGER)
+    @JoinColumn(name = "role_id", nullable = false)
+    private Role role;
 
+    private String username;
+    private String passwordHash;
+    private boolean enabled;
     private LocalDateTime createdAt;
     private LocalDateTime updatedAt;
-    private LocalDateTime deletedAt;
 }
