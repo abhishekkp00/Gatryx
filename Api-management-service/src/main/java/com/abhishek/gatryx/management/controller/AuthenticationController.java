@@ -1,4 +1,4 @@
-package com.abhishek.gatryx.analytics.controller;
+package com.abhishek.gatryx.management.controller;
 
 import jakarta.validation.Valid;
 import org.springframework.http.ResponseEntity;
