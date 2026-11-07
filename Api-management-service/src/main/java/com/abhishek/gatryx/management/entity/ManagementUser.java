@@ -1,4 +1,4 @@
-package com.abhishek.gatryx.analytics.entity;
+package com.abhishek.gatryx.management.entity;
 
 import jakarta.persistence.*;
 import lombok.Getter;
