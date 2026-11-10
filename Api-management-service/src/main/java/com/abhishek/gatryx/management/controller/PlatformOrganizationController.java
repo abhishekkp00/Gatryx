@@ -2,8 +2,10 @@ package com.abhishek.gatryx.management.controller;
 
 import com.abhishek.gatryx.management.dto.requestDto.OrganizationRequest;
 import com.abhishek.gatryx.management.dto.requestDto.OrganizationStatusRequest;
+import com.abhishek.gatryx.management.dto.requestDto.TenantAdminRequest;
 import com.abhishek.gatryx.management.dto.responseDto.OrganizationResponse;
 import com.abhishek.gatryx.management.dto.responseDto.TenantAdminResponse;
+import com.abhishek.gatryx.management.service.OrganizationService;
 import jakarta.validation.Valid;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
