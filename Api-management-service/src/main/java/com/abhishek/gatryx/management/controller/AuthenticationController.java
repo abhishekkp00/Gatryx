@@ -1,6 +1,5 @@
 package com.abhishek.gatryx.management.controller;
 
-import com.abhishek.gatryx.management.dto.responsedto.requesrtDto.LoginRequest;
 import jakarta.validation.Valid;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PostMapping;

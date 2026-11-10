@@ -1,4 +1,4 @@
-package com.abhishek.gatryx.management.dto.responsedto;
+package com.abhishek.gatryx.management.dto.responseDto;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;

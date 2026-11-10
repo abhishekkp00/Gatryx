@@ -1,6 +1,6 @@
 package com.abhishek.gatryx.management.controller;
 
-import com.abhishek.gatryx.management.dto.responsedto.HealthResponse;
+import com.abhishek.gatryx.management.dto.responseDto.HealthResponse;
 import com.abhishek.gatryx.management.service.HealthService;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;

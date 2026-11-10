@@ -1,4 +1,4 @@
-package com.abhishek.gatryx.management.dto.responsedto.requesrtDto;
+package com.abhishek.gatryx.management.dto.requestDto;
 
 import jakarta.validation.constraints.NotBlank;
 import lombok.Getter;
