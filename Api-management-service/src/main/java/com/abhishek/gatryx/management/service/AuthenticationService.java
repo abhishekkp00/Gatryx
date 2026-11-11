@@ -40,8 +40,7 @@ public class AuthenticationService {
     public LoginResponse login(LoginRequest request) {
 
         ManagementUser user = managementUserRepository.findByUsername(request.getUsername())
-                .orElseThrow(() -> invalidCredentials());
-
+                .orElseThrow(this::invalidCredentials);
         if(!user.isEnabled() || !passwordEncoder.matches(request.getPassword(), user.getPasswordHash())) {
             throw invalidCredentials();
         }
