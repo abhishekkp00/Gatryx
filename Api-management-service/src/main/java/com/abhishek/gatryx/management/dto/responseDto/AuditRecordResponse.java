@@ -1,5 +1,6 @@
 package com.abhishek.gatryx.management.dto.responseDto;
 
+import com.abhishek.gatryx.management.entity.ControlPlaneAuditRecord;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 
