@@ -1,5 +1,6 @@
 package com.abhishek.gatryx.management.controller;
 
+import com.abhishek.gatryx.management.dto.requestDto.TenantOrganizationRequest;
 import com.abhishek.gatryx.management.dto.responseDto.OrganizationResponse;
 import com.abhishek.gatryx.management.service.OrganizationService;
 import jakarta.validation.Valid;
