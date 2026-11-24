@@ -1,5 +1,6 @@
 package com.abhishek.gatryx.management.controller;
 
+import com.abhishek.gatryx.management.dto.responseDto.RouteResponse;
 import jakarta.validation.Valid;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
