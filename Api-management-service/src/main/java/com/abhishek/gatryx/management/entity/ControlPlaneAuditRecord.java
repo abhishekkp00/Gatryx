@@ -1,5 +1,6 @@
 package com.abhishek.gatryx.management.entity;
 
+
 import jakarta.persistence.Entity;
 import jakarta.persistence.FetchType;
 import jakarta.persistence.GeneratedValue;

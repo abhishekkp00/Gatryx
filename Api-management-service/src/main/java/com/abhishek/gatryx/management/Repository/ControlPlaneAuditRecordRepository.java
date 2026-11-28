@@ -1,35 +1,11 @@
 package com.abhishek.gatryx.management.Repository;
 
-import com.abhishek.gatryx.management.entity.Organization;
-import jakarta.persistence.*;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import com.abhishek.gatryx.management.entity.ControlPlaneAuditRecord;
+import org.springframework.data.jpa.repository.JpaRepository;
 
-import java.time.LocalDateTime;
+import java.util.List;
 
-@Entity
-@Table(name = "control_plane_audit_records")
-@Getter
-@Setter
-@NoArgsConstructor
-public class ControlPlaneAuditRecordRepository {
+public interface ControlPlaneAuditRecordRepository extends JpaRepository<ControlPlaneAuditRecord, Long> {
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
-
-    @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "organization_id")
-    private Organization organization;
-
-    private String actor;
-    private String action;
-    private String resourceType;
-    private String resourceId;
-    private String correlationId;
-    private Long durationMs;
-    private String result;
-    private String details;
-    private LocalDateTime createdAt;
+    List<ControlPlaneAuditRecord> findAllByOrganizationIdOrderByCreatedAtDesc(Long organizationId);
 }
